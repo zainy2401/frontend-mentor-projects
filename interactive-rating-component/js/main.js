@@ -15,7 +15,7 @@ function chooseRating(number){
 function submitRating(){
     var parent = document.getElementsByTagName("main");
     parent[0].style.alignItems = "center";
-    const img = "<img class='m' width='250px' src='C:\\Users\\zaiqu\\Desktop\\frontend-mentor-projects\\interactive-rating-component\\images\\illustration-thank-you.svg' alt='thank you'>";
+    const img = "<img class='m' width='250px' src='./images/illustration-thank-you.svg' alt='thank you'>";
     const selection = "<span class='m selection'>You selected " + chosen + " out of 5</span>";
     const title = "<h1 class='m'>Thank you!</h1>";
     const para = "<p style='text-align:center;'>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>";
