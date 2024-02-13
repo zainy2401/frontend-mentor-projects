@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Rating Component</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+
+        <main>
+            <div class="star-container m">
+                <img src="images/icon-star.svg" alt="" class="star">
+            </div>
+            <h1 class="m">How did we do?</h1>
+            <p class="m">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <div class="rating-container m">
+                <button onclick="chooseRating(1)" class="number">1</button>
+                <button onclick="chooseRating(2)" class="number">2</button>
+                <button onclick="chooseRating(3)" class="number">3</button>
+                <button onclick="chooseRating(4)" class="number">4</button>
+                <button onclick="chooseRating(5)" class="number">5</button>
+            </div>
+            <button id="submitter" class="submit m" onclick="submitRating()" disabled>submit</button>
+        </main>
+        
+    </body>
+</html>

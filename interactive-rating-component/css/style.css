@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+body{
+    background-color: #141519;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+}
+
+main{
+    background-color: #1C232D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 20px 30px;
+    width: 400px;
+}
+
+.m{
+    margin: 15px 0;
+}
+
+.star-container{
+    background-color: #262E35;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 1.8rem;
+}
+
+p{
+    color: rgb(172, 172, 172);
+    line-height: 150%;
+}
+
+.rating-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rating-container button{
+    background-color: #34373a;
+    color: rgb(172, 172, 172);
+    display: block;
+    border-radius: 100%;
+    border: none;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.rating-container button:hover{
+    background-color: #7C8898;
+    color: white;
+}
+
+.rating-container button:focus{
+    background-color: #FF740F;
+    color: white;
+}
+
+.submit{
+    border: none;
+    border-radius: 40px;
+    padding: 15px 0;
+    background-color: #FF740F;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.submit:hover{
+    background-color: white;
+    color: #FF740F;
+}
+
+.selection{
+    background-color: #262E35;
+    padding: 8px 25px;
+    border-radius: 25px;
+    color: #FF740F;
+}
+
+@media only screen and (max-width: 500px) {
+    main{
+        width: 80%;
+    }
+    .rating-container button{
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+}
