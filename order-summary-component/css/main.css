@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{margin: 0;}
+
+body{
+    font-family: "Red Hat Display", sans-serif;
+    background-color: #E0E8FF;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.m1{
+    margin: 10px 0;
+}
+
+/*Main Styling*/
+
+main{
+    background-color: white;
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+}
+
+h1{
+    font-size: 1.6rem;
+    color: hsl(223, 47%, 23%);
+}
+
+p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: hsl(224, 23%, 55%);
+    line-height: 1.7;
+}
+
+.plan{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #f5f7ff;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.plan1{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-music{
+    margin: 0 10px;
+}
+
+.plan-info{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    color: hsl(223, 47%, 23%);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price{
+    font-size: .95rem;
+    color: hsl(224, 23%, 55%);
+}
+
+.change-plan-link{
+    display: block;
+    text-align: right;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.change-plan-link:hover{
+    color: #756cd4;
+    text-decoration: none;
+}
+
+.confirm-button{
+    width: 100%;
+    background-color: #382AE1;
+    color: white;
+    padding: 16px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: .9rem;
+    font-weight: 600;
+    box-shadow: 0px 26px 12px -8px rgba(195,202,232,0.53);
+    cursor: pointer;
+}
+
+.confirm-button:hover{
+    background-color: #756cd4;
+}
+
+.cancel-button{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.cancel-button:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (min-width: 480px){
+    body{background-image: url("../images/pattern-background-desktop.svg");}
+    main{width: 400px}
+}
