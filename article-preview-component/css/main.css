@@ -1,0 +1,88 @@
+/* general styling */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+}
+
+/* main styling */
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    background-color: rgb(158, 98, 98);
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+}
+
+.article-image{
+    background-image: url('../images/drawers.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.article-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    row-gap: 1em
+}
+
+.article-content{
+}
+
+h1{
+    font-size: 1.2em;
+}
+
+P{
+    font-size: .8em;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.author-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.author-avatar{
+    width: 50px;
+    border-radius: 100%;
+}
+
+.author-details{}
+
+.author-name{
+    font-size: .8em;
+}
+
+.article-date{
+    font-size: .7em;
+}
+
+.share-icon{
+    width: 15px;
+    height: 13px;
+}
