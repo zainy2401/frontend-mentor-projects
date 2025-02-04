@@ -19,7 +19,7 @@ body{
 main{
     display: flex;
     flex-direction: row;
-    
+    width: 50%;
     background-color: white;
     border-radius: 10px;
     box-shadow:  0px 0px 17px 10px rgba(211, 226, 236, 0.85);
@@ -28,16 +28,15 @@ main{
 .article-image{
     background-image: url('../images/drawers.jpg');
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    width: 30%;
+    width: 45%;
     height: auto;
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
 }
 
 .article-main{
-    width: 70%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,10 +50,16 @@ main{
 
 h1{
     font-size: 1.5em;
+    margin: .5em 0;
+    color: #494e5c;
 }
 
 P{
     font-size: .9em;
+    font-weight: 600;
+    margin: .5em 0;
+    color: #83898f;
+    line-height: 170%;
 }
 
 .footer{
@@ -62,6 +67,7 @@ P{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: .5em 0 0 0;
     width: 100%;
 }
 
@@ -81,14 +87,32 @@ P{
 .author-details{}
 
 .author-name{
-    font-size: .8em;
+    font-size: .9em;
+    color: #3d3d3d;
 }
 
 .article-date{
-    font-size: .7em;
+    font-size: .8em;
+    font-weight: 500;
+    color: #b4b4b4;
 }
 
-.share-icon{
-    width: 15px;
-    height: 13px;
+.share-icon-container{
+    background-color: #EDF1FA;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.share-icon-container:hover{
+    background-color: #718198;
+}
+
+.share-icon-container:hover svg{
+    fill: white;
 }
